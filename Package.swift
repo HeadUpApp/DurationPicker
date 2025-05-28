@@ -17,7 +17,8 @@ let package = Package(
   targets: [
     .target(
       name: "DurationPicker",
-      dependencies: []),
+      dependencies: [],
+      resources: [.process("Resources/Localizable.xcstrings")]),
     .testTarget(
       name: "DurationPickerTests",
       dependencies: ["DurationPicker"]),
